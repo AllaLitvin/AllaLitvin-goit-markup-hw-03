@@ -358,7 +358,7 @@ background color footer: #2F303A;*/
   padding-right: 0px;
 }
 
-/*portfolio projects*/
+/*portfolio */
 
 /*filters*/
 
@@ -367,6 +367,7 @@ background color footer: #2F303A;*/
   justify-content: center;
   margin-bottom: 34px;
   margin-left: 0px;
+  padding-bottom: 0px;
 }
 
 .button-items {
@@ -377,6 +378,8 @@ background color footer: #2F303A;*/
 .button-items:last-child {
   margin-right: 0px;
 }
+
+/*projects*/
 
 .invisible-heading {
   display: none;
@@ -422,7 +425,6 @@ background color footer: #2F303A;*/
   line-height: 36px;
   letter-spacing: 0.06px;
   color: var(--very-dark-grey-color);
-  text-decoration: none;
 }
 
 .type-project {
