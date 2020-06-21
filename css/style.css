@@ -42,7 +42,6 @@ background color footer: #2F303A;*/
 }
 
 .container {
-  outline: 1px solid tomato;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -54,6 +53,8 @@ background color footer: #2F303A;*/
 .main-nav {
   display: flex;
   align-items: center;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 /*main logo*/
@@ -73,7 +74,6 @@ background color footer: #2F303A;*/
 .footer .logo {
   font-size: 22px;
   padding-top: 45px;
-  padding-bottom: 8px;
 }
 .studio {
   font-family: "Ralewey", sans-serif;
@@ -174,15 +174,19 @@ background color footer: #2F303A;*/
 }
 
 .hero-title {
+  padding-top: 0px;
   font-family: var(--font-family);
   font-size: 44px;
   line-height: 60px;
   letter-spacing: 0.06px;
-  padding-top: 30px;
+
   text-align: center;
 }
 
 .hero .button.primary {
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
   border-radius: 4px;
   margin-bottom: 0px;
   align-items: center;
@@ -272,6 +276,7 @@ background color footer: #2F303A;*/
 
 .section-item.company {
   text-align: center;
+  padding-top: 0px;
   margin-top: 0;
   margin-bottom: 0px;
   padding-right: 30px;
@@ -287,6 +292,10 @@ background color footer: #2F303A;*/
 }
 
 /*team section */
+
+.ourteam {
+  background-color: #f5f4fa;
+}
 .team {
   display: flex;
   padding-top: 0px;
@@ -331,7 +340,7 @@ background color footer: #2F303A;*/
 }
 
 .links {
-  display: block;
+  display: inline-block;
   padding-right: 22px;
 }
 
@@ -362,22 +371,39 @@ background color footer: #2F303A;*/
 
 /*filters*/
 
-.projects .button {
+.filter {
   display: flex;
   justify-content: center;
-
-  margin-bottom: 34px;
-  margin-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.button-items {
-  display: flex;
+.filter-items {
+  display: inline-block;
   margin-right: 8px;
+  justify-content: center;
+  text-align: center;
+  color: var(--very-dark-grey-color);
+  background-color: var(--forbutton);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03px;
 }
 
-.button-items:last-child {
+.projects .button-secondary {
+  margin: 0;
+  padding: 6px 22px;
+  letter-spacing: 0.03em;
+  line-height: 1.62;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: 0;
+}
+
+.filter-items:last-child {
   margin-right: 0px;
 }
 
@@ -405,11 +431,10 @@ background color footer: #2F303A;*/
 
 .flex-elements {
   display: block;
-  width: 360px;
-  flex-wrap: wrap;
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
 }
 
 .flex-elements:last-child {
@@ -420,9 +445,18 @@ background color footer: #2F303A;*/
   margin-bottom: 0px;
 }
 
+.flex-elements:nth-child(3n) {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .name-project {
   margin-top: 20px;
-  padding-bottom: 0px;
+  margin-left: 20px;
+  margin-bottom: 0px;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06px;
@@ -430,7 +464,8 @@ background color footer: #2F303A;*/
 }
 
 .type-project {
-  margin-top: 4px;
+  margin-left: 20px;
+  margin-top: 0px;
   padding-bottom: 0px;
   font-weight: normal;
   font-size: 16px;
@@ -457,29 +492,29 @@ background color footer: #2F303A;*/
   letter-spacing: 0.03px;
   color: var(--white);
   background-color: #2f303a;
-  height: 253px;
 }
 
-.container .footer {
+.footer .container {
   display: flex;
-  align-items: stretch;
+  justify-content: stretch;
+  align-items: baseline;
 }
 
 .contact-footer {
   display: block;
-  flex-wrap: wrap;
   margin-left: 0px;
+  padding-bottom: 28px;
   font-style: normal;
 }
 
 .address-footer {
+  display: block;
+  margin-top: 0px;
   font-style: normal;
   line-height: 24px;
-  margin-bottom: 28px;
 }
 
 .address-details {
-  display: block;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   padding: 0px;
@@ -487,41 +522,70 @@ background color footer: #2F303A;*/
 }
 
 .addresses a {
-  display: contents;
+  display: block;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   line-height: 24px;
 }
 
+/*join us*/
+
 .info {
-  display: flex;
+  display: block;
+  padding-left: 59px;
+}
+
+.join {
+  display: block;
+  padding-top: 45px;
+  margin: 0px;
 }
 .social-links {
+  display: block;
   padding-left: 0px;
 }
 
-.distribution {
-  display: flex;
-}
-
 .reference {
+  display: inline-block;
+  padding-top: 3px;
   padding-right: 22px;
 }
 
+/*subscribe */
+
+.distribution {
+  display: block;
+  padding-left: 94px;
+  padding-top: 45px;
+  margin: 0px;
+}
+
+.subscribe {
+  margin: 0px;
+}
+
+.email {
+  padding-right: 12px;
+}
+
+/*copirate*/
 .developed {
-  display: inline-flex;
-  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-style: normal;
   font-weight: normal;
+
   font-size: 12px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.4);
 }
 
-/*button */
+/* button options */
 
 .button {
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
   font-family: var(--font-family);
   font-style: normal;
   font-size: 16px;
@@ -537,9 +601,10 @@ background color footer: #2F303A;*/
 }
 
 .button.secondary {
+  border-radius: 4px;
+  border-color: var(--forbutton);
   color: var(--very-dark-grey-color);
   background-color: var(--forbutton);
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
