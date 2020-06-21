@@ -42,6 +42,7 @@ background color footer: #2F303A;*/
 }
 
 .container {
+  outline: 1px solid tomato;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -71,6 +72,8 @@ background color footer: #2F303A;*/
 
 .footer .logo {
   font-size: 22px;
+  padding-top: 45px;
+  padding-bottom: 8px;
 }
 .studio {
   font-family: "Ralewey", sans-serif;
@@ -137,10 +140,6 @@ background color footer: #2F303A;*/
   letter-spacing: 0.02px;
 }
 
-.footer .contacts a {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .contacts .item + .item {
   margin-right: 30px;
 }
@@ -165,24 +164,28 @@ background color footer: #2F303A;*/
 /* hero*/
 
 .hero {
-  outline: 1px solid tomato;
-  text-align: center;
   background-color: var(--dark-grey-color);
   color: var(--white);
 }
+.hero .container {
+  width: 696px;
+  padding: 200px, 452px, 280px;
+  align-items: center;
+}
 
 .hero-title {
-  height: 120px;
   font-family: var(--font-family);
   font-size: 44px;
   line-height: 60px;
   letter-spacing: 0.06px;
+  padding-top: 30px;
+  text-align: center;
 }
 
-.button.primary .hero {
+.hero .button.primary {
   border-radius: 4px;
-  margin-top: 30px;
   margin-bottom: 0px;
+  align-items: center;
 }
 
 /*common section options*/
@@ -190,13 +193,15 @@ background color footer: #2F303A;*/
 .section {
   font-family: var(--font-family);
   font-style: normal;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0px;
 }
 
 .section-title {
+  margin: 0px;
+  padding-bottom: 50px;
   text-align: center;
-  margin-top: 0px;
-  padding-top: 93px;
-  margin-bottom: 0px;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -205,7 +210,6 @@ background color footer: #2F303A;*/
 }
 
 .section-item {
-  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -226,7 +230,6 @@ background color footer: #2F303A;*/
 
 .advantages {
   display: flex;
-  margin-top: 93px;
   margin-bottom: 0px;
   padding-left: 0px;
   justify-content: space-between;
@@ -249,18 +252,17 @@ background color footer: #2F303A;*/
 }
 
 /*company options*/
+
 .works {
   display: flex;
-  margin-top: 0px;
   margin-left: 0px;
-  margin-bottom: 0px;
   padding-left: 0px;
+  margin-bottom: 0px;
   justify-content: space-between;
 }
 
 .occupation {
-  display: block;
-  margin-top: 50px;
+  display: flex;
   padding-right: 30px;
 }
 
@@ -287,6 +289,7 @@ background color footer: #2F303A;*/
 /*team section */
 .team {
   display: flex;
+  padding-top: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -296,7 +299,6 @@ background color footer: #2F303A;*/
 
 .members {
   display: block;
-  margin-top: 50px;
 }
 .name {
   text-align: center;
@@ -343,14 +345,12 @@ background color footer: #2F303A;*/
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 94px;
   padding-left: 0px;
   justify-content: space-between;
 }
 
 .examples {
   display: block;
-  margin-top: 50px;
   padding-right: 30px;
 }
 
@@ -457,43 +457,60 @@ background color footer: #2F303A;*/
   letter-spacing: 0.03px;
   color: var(--white);
   background-color: #2f303a;
+  height: 253px;
 }
 
 .container .footer {
   display: flex;
-  flex-direction: row;
+  align-items: stretch;
 }
 
-.info {
-  display: flex;
-  justify-content: center;
-}
-
-.address-list {
+.contact-footer {
+  display: block;
+  flex-wrap: wrap;
+  margin-left: 0px;
   font-style: normal;
 }
 
-.address {
-  display: flex;
+.address-footer {
+  font-style: normal;
+  line-height: 24px;
+  margin-bottom: 28px;
 }
 
 .address-details {
   display: block;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  padding: 0px;
+  margin-bottom: 9px;
 }
 
-.social-footer {
+.addresses a {
+  display: contents;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.info {
   display: flex;
+}
+.social-links {
   padding-left: 0px;
 }
 
+.distribution {
+  display: flex;
+}
+
 .reference {
-  display: block;
   padding-right: 22px;
 }
 
 .developed {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-style: normal;
   font-weight: normal;
